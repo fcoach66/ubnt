@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sed -i "s|deb cdrom|#deb cdrom|g" /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
